@@ -35,7 +35,24 @@ section { padding: 80px 20px; border-bottom: 1px solid #ddd; scroll-margin-top: 
 h2 { color: #4a0e0e; border-bottom: 2px solid #722f37; display: inline-block; margin-bottom: 20px; }
 
 .profile-wrapper { display: flex; align-items: center; gap: 30px; }
-.profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover; }
+.profile-img {
+    /* 1. Force it to be a square */
+    width: 180px !important; 
+    height: 180px !important; 
+    aspect-ratio: 1 / 1 !important; /* Forces 1:1 ratio regardless of image source */
+
+    /* 2. The Circle & Crop */
+    border-radius: 50% !important; 
+    object-fit: cover !important; /* Crops the sides so it doesn't look squished */
+    
+    /* 3. Layout Fixes */
+    display: block;
+    margin: 0 auto;
+    
+    /* 4. Visuals */
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
 
 #skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; padding: 0; }
 #skills-list li, .edu-item, .project-card {
