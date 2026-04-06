@@ -1,18 +1,17 @@
-#                   **AI Use Declaration & Prompt Log**
+ENTRY #1
+Tool Used: Gemini (Google AI)
+Prompt (copy-paste exactly): "i want my photo to be circle"
+AI Output: Suggested using border-radius: 50% and object-fit: cover within the CSS class.
+How I used/modified it in my project: I applied these properties to the .profile-img class in style.css to ensure my professional headshot was perfectly circular and not distorted.
 
-**Name: Amad, Ashley Nicole Amad** 
+ENTRY #2
+Tool Used: Gemini (Google AI)
+Prompt (copy-paste exactly): "WHY WHEN I CLICK THIS 4 THERES NO INFO MOGAWAS"
+AI Output: Explained the relationship between anchor tags (href="#id") and section IDs.
+How I used/modified it in my project: I corrected the IDs in my <section> tags to match the navigation links so the page jumps correctly to "About," "Skills," and "Contact."
 
-**Course/Section: IT 2R10 \- Web Systems and Technologies**
-
-I used Gemini (AI) as a technical collaborator to assist with the following:
-
-* **Boilerplate Generation:** Creating the initial HTML5 structure and CSS Wine Red theme.  
-* **CSS Debugging:** Fixing the profile image to be a perfect circle using the Box Model and `object-fit` properties.  
-* **Feature Logic:** Implementing the specific JavaScript and jQuery requirements (DOM manipulation, event handling, and custom animations).
-
-| Phase  | User Prompt | AI Technical Assistance |
-| :---- | :---- | :---- |
-| **CSS Refinement** | "i want my photo to be circle" | Provided the specific CSS `border-radius: 50%` and `width/height` constraints to ensure the image displays as a circle. |
-| **Innovation Bonus** | "how should i do this" | Designed a "Hire Me" pop-up panel and a Dark Mode toggle to secure the \+5 Innovation Bonus points. |
-| **Navigation**  | "WHY WHEN I CLICK THIS 4 THERES NO INFO MOGAWAS" | Explained how HTML Anchor links work and fixed the navigation by matching `href="#id"` with section IDs. |
-
+ENTRY #3
+Tool Used: Gemini (Google AI)
+Prompt (copy-paste exactly): "how should i do this" (referring to the project checklist)
+AI Output: Outlined a deployment roadmap for GitHub Pages
+How I used/modified it in my project: I followed the steps to enable GitHub Pages in my repository settings and used the suggested script to structure my final video presentation.
