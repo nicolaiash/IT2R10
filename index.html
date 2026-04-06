@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional IT Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-overlay">
+        <div class="login-container">
+            <form id="custom-login-form">
+                <div class="icon-wrapper">
+                    <img src="assets/profile-pic.jpg" alt="Profile Icon" class="login-icon">
+                </div>
+                <div class="input-group">
+                    <span class="icon">&#128100;</span> 
+                    <input type="text" id="visitor-input" placeholder="Enter Your Name" required>
+                </div>
+                <button type="submit" id="login-submit-btn">LOGIN</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="resume-content" style="display: none;">
+        <nav>
+            <ul class="flex-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">🌓 Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <header style="text-align: center; margin-top: 20px;">
+                <h1 id="welcome-msg"></h1>
+                <button id="hire-me-btn">Hire Me!</button>
+            </header>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="profile-wrapper"> 
+                    <img src="assets/profile-pic.jpg" alt="Profile Photo" class="profile-img">
+                    <div class="about-text">
+                        <p>I am Ashley Nicole Amad, a 20-year-old IT student specializing in Systems Analysis and Web Development. I have hands-on experience in full-stack development using PHP/Laravel and strong knowledge of database management with SQL. I am eager to apply my skills in real-world projects and continue growing as a developer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <h3>BS in Information Technology</h3>
+                    <p><strong>University of Science and Technology of Southern Philippines</strong> | 2026 - Present</p>
+                    <ul>
+                        <li>Specializing in Systems Integration and Web Technologies.</li>
+                        <li>Relevant Coursework: Database Management, Systems Analysis, Ethics in IT.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul id="skills-list">
+                    <li>HTML5 & CSS3 (Flexbox/Grid)</li>
+                    <li>JavaScript & jQuery</li>
+                    <li>PHP & Laravel Framework</li>
+                    <li>SQL & Database Design</li>
+                    <li>Systems Analysis (UML)</li>
+                    <li>Figma Prototyping</li>
+                </ul>
+                <button id="add-skill-btn">Add a New Skill</button> 
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <h3>Payroll Management System</h3>
+                    <p>A comprehensive system built with SQL and XAMPP to automate salary computations and employee record management.</p>
+                </div>
+                <br>
+                <div class="project-card">
+                    <h3>Google Classroom Architecture</h3>
+                    <p>Designed a visual prototype and system architecture for a classroom management platform using Figma.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="edu-item">
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <span class="icon">&#9993;</span>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" placeholder="Your Message" rows="4" style="width:100%; border:none; outline:none; font-family:inherit;"></textarea>
+                        </div>
+                        <button type="submit" id="send-msg-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="hire-me-panel" style="display: none;">
+        <div class="panel-content">
+            <span id="close-panel">&times;</span>
+            <h3>Let's Work Together!</h3>
+            <p>I am currently open for internships and junior developer roles.</p>
+            <a href="mailto:your-email@example.com" id="panel-email-btn">Send an Email</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

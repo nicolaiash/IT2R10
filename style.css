@@ -1,0 +1,67 @@
+/* --- GLOBAL STYLES --- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background-color: #fcfcfc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23722f37' fill-opacity='0.03' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* --- LOGIN OVERLAY --- */
+#login-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: #f4f7f6; display: flex; justify-content: center; align-items: center; z-index: 9999;
+}
+.login-container {
+    background: #fff5f5; padding: 40px; border-radius: 15px; text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 5px solid #722f37;
+}
+.login-icon { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #722f37; margin-bottom: 20px; object-fit: cover; }
+
+/* --- NAVIGATION --- */
+nav { background: #4a0e0e; padding: 1rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+.flex-nav { display: flex; justify-content: center; list-style: none; margin: 0; padding: 0; align-items: center; }
+.flex-nav a, #theme-toggle { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; cursor: pointer; border: none; background: none; font-size: 1rem; }
+#theme-toggle { border: 1px solid white; border-radius: 5px; padding: 5px 10px; transition: 0.3s; }
+#theme-toggle:hover { background: white; color: #4a0e0e; }
+.flex-nav a:hover { color: #ff4d4d; }
+
+/* --- LAYOUT & CARDS --- */
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+section { padding: 80px 20px; border-bottom: 1px solid #ddd; scroll-margin-top: 80px; }
+h2 { color: #4a0e0e; border-bottom: 2px solid #722f37; display: inline-block; margin-bottom: 20px; }
+
+.profile-wrapper { display: flex; align-items: center; gap: 30px; }
+.profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover; }
+
+#skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; padding: 0; }
+#skills-list li, .edu-item, .project-card {
+    background: white; padding: 20px; border-radius: 8px; border-left: 5px solid #722f37; box-shadow: 0 4px 6px rgba(0,0,0,0.05); list-style: none;
+}
+
+/* --- BUTTONS --- */
+#login-submit-btn, #add-skill-btn, #hire-me-btn, #send-msg-btn {
+    background: #722f37; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s;
+}
+#login-submit-btn:hover, #hire-me-btn:hover, #send-msg-btn:hover { background: #4a0e0e; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+/* --- HIRE ME PANEL --- */
+#hire-me-panel {
+    position: fixed; bottom: 20px; right: 20px; width: 280px; background: #fff5f5;
+    border: 2px solid #722f37; padding: 20px; border-radius: 10px; z-index: 10001; box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+#close-panel { float: right; cursor: pointer; font-size: 1.5rem; color: #722f37; font-weight: bold; }
+#panel-email-btn { display: block; background: #722f37; color: white; text-align: center; padding: 10px; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+
+/* --- DARK MODE OVERRIDES --- */
+.dark-theme { background-color: #1a1a1a !important; color: #e0e0e0; background-image: none; }
+.dark-theme li, .dark-theme .edu-item, .dark-theme .project-card, .dark-theme .login-container { background-color: #2d2d2d !important; color: white; border-bottom: none; }
+.dark-theme h2 { color: #ff4d4d; border-bottom-color: #ff4d4d; }
+.dark-theme #hire-me-panel { background-color: #2d2d2d; color: white; }
+
+/* jQuery Highlight Class */
+.highlight-card { border-left-color: #ff4d4d !important; background-color: #fffafa !important; transform: scale(1.03); transition: 0.3s; }
+.dark-theme .highlight-card { background-color: #3d3d3d !important; }
